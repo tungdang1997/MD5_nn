@@ -2,7 +2,7 @@ import {useState} from "react";
 
 export default function S(prop) {
     // let [list, setList] = useState([])
-    console.log(prop)
+    // console.log(prop)
     let [id, setId] = useState('');
     let [name, setName] = useState('');
     let [age, setAge] = useState('');

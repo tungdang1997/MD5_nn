@@ -42,7 +42,7 @@ export default function CreateStudent(){
                     <ErrorMessage name={'description'}></ErrorMessage>
                     <Field name={'action'}></Field>
                     <ErrorMessage name={'action'}></ErrorMessage>
-                    <button>Save</button>
+                    <button>Add</button>
                 </Form>
             </Formik>
         </>

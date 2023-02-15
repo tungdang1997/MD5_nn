@@ -12,11 +12,22 @@ export default function ListStudent(){
     return(
         <>
             <h1>List Student</h1>
+            <table border="2px">
             {list.map((item, key)=>{
                 return(
-                     <Link to={'/edit-student/' + item.id}> <h3 key={key}>{item.name}: {item.description}</h3></Link>
+
+                        <tr>
+                            <td><h3 key={key}>{item.name}</h3></td>
+                            <td><h3 key={key}>{item.description}</h3></td>
+                            <td><h3 key={key}>{item.action}</h3></td>
+                            <td><Link to={'/edit-student/' + item.id}><button>Edit</button> </Link></td>
+                            <td><Link to={'/delete-student/' + item.id}><button>Delete</button> </Link></td>
+                        </tr>
+
+
                 )
             })}
+            </table>
         </>
     )
 }

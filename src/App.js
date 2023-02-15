@@ -12,15 +12,17 @@ import ListStudent from "./pages/students/ListStudent";
 import MyClock from "./components/test";
 import DeleteStudent from "./pages/students/DeleteStudent";
 
+
 function App() {
   return (
-
+      <div className="App">
 
     <>
         {/*/!*<C name></C>*!/*/}
         {/*/!*<D></D>*!/*/}
         {/*<E></E>*/}
         <Routes>
+            <Route></Route>
             <Route path={'/'} element={<Home></Home>}>
                 <Route path={'/'} element={<ListStudent/>}></Route>
                 <Route path={'/create-student'} element={<CreateStudent/>}></Route>
@@ -30,6 +32,7 @@ function App() {
             <Route path={'/admin'} element={<Admin></Admin>}></Route>
         </Routes>
     </>
+      </div>
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />

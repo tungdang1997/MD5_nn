@@ -36,12 +36,18 @@ export default function CreateStudent(){
             }}
             >
                 <Form >
-                    <Field name={'name'}></Field>
+                    <p>Name: </p>
+                    <Field name={'name'} ></Field>
                     <ErrorMessage name={'name'}></ErrorMessage>
+                    <br/>
+                    <p>Age: </p>
                     <Field name={'description'}></Field>
                     <ErrorMessage name={'description'}></ErrorMessage>
+                    <br/>
+                    <p>Address: </p>
                     <Field name={'action'}></Field>
                     <ErrorMessage name={'action'}></ErrorMessage>
+                    <br/>
                     <button>Add</button>
                 </Form>
             </Formik>

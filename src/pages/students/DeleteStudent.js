@@ -19,19 +19,6 @@ export default function DeleteStudent(){
                 }}>No</button></td>
             </tr>
         </table>
-        // <Formik
-        //     // validationSchema={validateSchema}
-        //         onSubmit={(values)=>{
-        //             axios.delete(`http://localhost:3000/students/${id}`).then(()=>{
-        //                 navigate('/')
-        //             })
-        //         }}
-        //         enableReinitialize={true}
-        // >
-        //     <Form>
-        //         <p>Are You Sure?</p>
-        //         <button>Delete</button>
-        //     </Form>
-        // </Formik>
+
     );
 }
